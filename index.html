@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<title>모든 유기체들은 춤을 춘다</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+
+<style>
+body{background-color:black;}
+#org{width:100%; height: 100%; position:fixed; z-index:-5;
+	background: url(1.gif);
+	background-size:cover;
+	background-repeat: no-repeat; 
+	opacity:0.2;
+}
+
+#title{width: 400px; height:400px; padding:20px;
+	background:url(Untitled-1.gif); 
+	background-repeat:no-repeat;
+	background-position:top left;
+
+	margin:auto; position:absolute; z-index:1;
+	top:20px; left:20px; margin:20px;
+	}
+
+
+#e1{width:200px; height:200px; background-color:red; display:block;}
+
+#e2{width:20px; height:5px; background-color:green;  animation : drop 2s running ease-in-out alternate infinite; position:absolute; left:200px;}
+
+#wave{width:1200px; height:400px; position:absolute; right: 240px; 
+	top:600px; z-index:3; display:none;
+	background: url(wave.gif); color:purple; text-align:center; line-height:400px;
+	background-size:cover;
+	background-color:purple;
+	background-blend-mode:multiply;}
+
+#wave2 {width:500px; height:400px; 
+	position:absolute; right:1200px; top:300px; z-index:5;
+	background: url(ocean.gif);
+	background-size:cover;
+	background-color:blue;
+	background-blend-mode:darken;
+	animation: float 2s paused;}
+
+#Pb{width:600px; height:800px; position:absolute; right: 240px; z-index:4; 
+	background: url(bubble.gif);
+	background-size:cover; display :block;
+	background-blend-mode:multiply;
+	animation:float 1s paused; }
+
+#human{width:800px; height:800px; position:absolute; 
+	background: url(guman.gif); opacity:0;
+	background-size:cover; }
+
+#ppr{width:700px; height:700px; position:absolute; left:150px;
+	background:url(bubbleexpand.gif); color:white; text-align:center; line-height:700px;
+	background-size:cover;
+	animation:float 2s paused;}
+
+#elt{width:500px; height:100px; color:yellow;
+	position:absolute; left:700px; top:500px; z-index:6;
+	font-size:20px;}
+
+#dance{width:500px; height:100px; color:green; text-shadow: 1px 1px 20px green;
+	position:absolute; left:700px; top:800px; z-index:6;
+	font-size:55px; font-family:  'Roboto Slab', serif;
+	animation:float 2s paused forwards; opacity:0; }
+
+
+#text1{width:1080px; height:80px; transform: rotate(90deg);  z-index:-2; 
+		position:absolute; right:-400px; top:500px; opacity:0.5;
+		background:url(Untitled-2.gif);
+		background-repeat:no-repeat;}
+
+#text2{	width:1080px; height:80px;  padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:-300px; top:500px; opacity:0.5;
+		background:url(Untitled-3.gif);
+		background-repeat:no-repeat;}
+
+#text3{	width:1080px; height:80px;  padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:-200px; top:500px; opacity:0.5;
+		background:url(Untitled-4.gif);
+		background-repeat:no-repeat;}
+
+#text4{	width:1200px; height:80px; padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:-100px; top:550px; opacity:0.5;
+		background:url(Untitled-5.gif); 
+		background-repeat:no-repeat;}
+
+#text5{	width:1080px; height:80px; padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:100px; top:500px; opacity:0.5;
+		background:url(Untitled-6.gif);
+		background-repeat:no-repeat;}	
+
+#text6{	width:1080px; height:80px; padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:200px; top:500px; opacity:0.5;
+		background:url(Untitled-7.gif); 
+		background-repeat:no-repeat;}	
+
+#text7{	width:1080px; height:80px; padding:20px 0px; transform: rotate(90deg);
+		position:absolute; right:300px; top:500px; opacity:0.5;
+		background:url(Untitled-8.gif);
+		background-repeat:no-repeat;}
+
+@keyframes drop {
+	0%{top:10px; opacity:0; }
+	30%{right:50px; height:20px; opacity:0.5;}
+	50%{top:10px; opacity:0;}
+	80%{bottom:1200px; right:50px;}
+	100%{bottom:10px; height:20px; opacity:0.5;}
+}
+
+
+#text2:hover {transform:scale(2);}
+#text3:hover {transform:scale(2);}
+#text4:hover {transform:scale(2);}
+#text5:hover {transform:scale(2);}
+#text6:hover {transform:scale(2);}
+#text7:hover {transform:scale(2);}
+
+@keyframes float{
+	from{opacity:0;}
+	to{opacity:1;}
+	}
+
+</style>
+</head>
+<body>
+
+<div id = wrap1>
+	<div id = org></div>
+	<div id =title></div>
+	<div id = e1></div>
+	<div id = e2></div>
+	<div id = wave> Click </div>
+	<div id = wave2></div>
+
+	<div id = Pb> </div>
+	<div id = human></div>
+	<div id = ppr onclick = "typeWriter()"> Click </div>
+	<div id = elt></div>
+	<div id = dance><h1>Dance</h1></div>
+
+	<div class = text>
+		<div id = text1></div>
+		<div id = text2></div>
+		<div id = text3></div>
+		<div id = text4></div>
+		<div id = text5></div>
+		<div id = text6></div>	
+		<div id = text7></div>	
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+var clo = document.getElementById("e2");
+	
+	for(var i=0; i<250; i++){
+	var newclo = clo.cloneNode(true);
+	newclo.style.left = Math.random()*window.innerWidth+"px";
+	newclo.style.animationDuration = Math.random()*50+"s";
+	document.body.appendChild(newclo);
+	}
+
+
+	text7.onclick = function(){
+	wave.style.display = "block";
+	Pb.style.animationPlayState = "running";
+	Pb.style.animationDuration = "10s";
+	wave2.style.animationPlayState="running";
+	wave2.style.animationDuration="20s";
+	}
+
+	wave.onclick = function(){
+	human.style.opacity ="1";
+	ppr.style.animationPlayState ="running";
+	dance.style.animationPlayState="running";
+	dance.style.animationDuration="5s";
+	dance.style.animationDuration ="50s";
+
+
+	}
+
+
+	var i = 0;
+	var txt = '나는 춤을 출 줄 아는 신만을 믿는다■나는 걷는 법을 배웠다■ 그 후 나는 줄곧 달렸다■나는 하늘을 나는 법을 배웠다■그 후 나는 다른 사람의 도움 없이도 움직일 수 있었다■나는 이제 가볍다■나는 날고 있으며 나 자신을 내려다보고 있었다■이제야 어떤 신이 내 몸 안에서 춤을 추고 있다. <차라투스트라는 이렇게 말했다>';
+	var speed = 50;
+
+	function typeWriter(){
+		if(i<txt.length){
+			document.getElementById("elt").innerHTML += txt.charAt(i);
+			i++;
+			setTimeout(typeWriter, speed);
+		}
+	}
+
+</script>
+</body>
+</html>
